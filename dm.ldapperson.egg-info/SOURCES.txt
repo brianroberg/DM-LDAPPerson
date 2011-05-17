@@ -1,0 +1,15 @@
+README.txt
+setup.cfg
+setup.py
+dm/__init__.py
+dm.ldapperson.egg-info/PKG-INFO
+dm.ldapperson.egg-info/SOURCES.txt
+dm.ldapperson.egg-info/dependency_links.txt
+dm.ldapperson.egg-info/entry_points.txt
+dm.ldapperson.egg-info/namespace_packages.txt
+dm.ldapperson.egg-info/not-zip-safe
+dm.ldapperson.egg-info/paster_plugins.txt
+dm.ldapperson.egg-info/requires.txt
+dm.ldapperson.egg-info/top_level.txt
+dm/ldapperson/__init__.py
+dm/ldapperson/tests.py
