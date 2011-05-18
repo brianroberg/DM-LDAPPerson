@@ -1,7 +1,8 @@
 import unittest
+import doctest
+from doctest import DocTestSuite
 
-#from zope.testing import doctestunit
-#from zope.component import testing
+from zope.component import testing
 from Testing import ZopeTestCase as ztc
 
 from Products.Five import fiveconfigure
@@ -28,16 +29,18 @@ class TestCase(ptc.PloneTestCase):
 
 
 def test_suite():
+    optionflags = doctest.ELLIPSIS | doctest.NORMALIZE_WHITESPACE
     return unittest.TestSuite([
-
+    
         # Unit tests
         #doctestunit.DocFileSuite(
         #    'README.txt', package='dm.ldapperson',
         #    setUp=testing.setUp, tearDown=testing.tearDown),
 
-        #doctestunit.DocTestSuite(
-        #    module='dm.ldapperson.mymodule',
-        #    setUp=testing.setUp, tearDown=testing.tearDown),
+        DocTestSuite(
+            module='dm.ldapperson.person',
+            setUp=testing.setUp, tearDown=testing.tearDown,
+            optionflags=optionflags),
 
 
         # Integration tests that use PloneTestCase
